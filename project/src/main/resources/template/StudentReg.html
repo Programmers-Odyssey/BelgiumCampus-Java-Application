@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" href="styles.css">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Registration</title>
+	<link rel="stylesheet" href="Styles.css">
 </head>
+
 <body>
 
+	<div class="container wide">
+		<h1>Student Registration</h1>
+		<form action="#" method="post">
 
-	<title>Student Registration</title>
-	<body>
-	
-		   <div class="RegistrationBox">
-	
-			<h1>Student Registration</h1>
-			<form>
-	
-				<p>Email</p>
-				<input type="text" name="" placeholder="Enter Email address">
-				<p>Password</p>
-				<input type="password" name="" placeholder="Enter Password ">
-				<p>First Name</p>
-				<input type="Name" name="" placeholder="Enter First Name ">	
-				<p>Last Name</p>
-				<input type="lastName" name="" placeholder="Enter Last Name ">	
-				<p>Student Number</p>
-				<input type="StudentNumber" name="" placeholder="Enter Student Number ">	
-				<input type="submit" name="" value="Register">
+			<div class="form-group">
+				<label for="firstName">First Name</label>
+				<input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+			</div>
+
+			<div class="form-group">
+				<label for="lastName">Last Name</label>
+				<input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+			</div>
+
+			<div class="form-group">
+				<label for="studentNumber">Student Number</label>
+				<input type="text" id="studentNumber" name="studentNumber" placeholder="Enter Student Number" required>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="Enter Email address" required>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" placeholder="Enter Password" required>
+			</div>
+
+			<input type="submit" value="Register">
+
+			<div class="links">
 				<a href="StudentLogin.html">Already have an account? Login Here</a>
-				<a href="AdminLogin.html">Are you a Admin? Login Here</a>
-	
-			</form>
-	
-	
-		   </div>
-
-
-		
-
+				<a href="AdminLogin.html">Are you an Admin? Login Here</a>
+			</div>
+		</form>
+	</div>
 
 </body>
+
 </html>
